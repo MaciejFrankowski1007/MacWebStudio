@@ -1,0 +1,459 @@
+@use "./colors" as *;
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: $color-dark;
+	color: $color-dark;
+	font-family: "Montserrat", sans-serif;
+}
+
+html {
+	scroll-padding-top: 74px;
+}
+
+.underline {
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $color-main;
+}
+
+.blue-text {
+	color: $color-main;
+}
+
+.section-title {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+nav {
+	text-transform: uppercase;
+	text-align: center;
+	transition: background-color 0.6s;
+	color: $color-main;
+	background-color: $color-dark;
+	padding-top: 4rem;
+	z-index: 10;
+
+	.navbar-toggler {
+		padding: 10px 15px;
+		color: $color-medium-gray;
+	}
+
+	img {
+		display: block;
+		width: auto;
+		max-height: 40px;
+	}
+
+	.nav-link,
+	.navbar-nav .show .nav-link,
+	.navbar-brand,
+	.fa-solid {
+		color: $color-light-gray;
+	}
+
+	.nav-link:focus,
+	.nav-link:hover,
+	.navbar-nav .nav-link.active,
+	.navbar-nav .show .nav-link {
+		color: $color-main;
+	}
+}
+
+.hero-img {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	padding: 4rem 1rem;
+
+	h1 {
+		color: $color-light-gray;
+		margin-bottom: 2rem;
+		position: static;
+	}
+
+	.header-image {
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto 2rem;
+
+		img {
+			width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	p {
+		color: $color-light-gray;
+		margin: 0 auto;
+	}
+}
+
+.offer {
+	background-color: $color-dark;
+	color: $color-light-gray;
+	padding: 5rem 0;
+
+	.section-title {
+		color: $color-light-gray;
+	}
+
+	.underline {
+		background-color: $color-main;
+	}
+
+	.offerts-hover {
+		transition: transform 0.3s ease;
+
+		i {
+			font-size: 2rem;
+			color: $color-main;
+			margin-bottom: 1rem;
+		}
+
+		.offerts-card-title {
+			color: $color-light-gray;
+			font-size: 1.1rem;
+		}
+
+		.offerts-card-text {
+			color: $color-light-gray;
+			font-weight: 300;
+			line-height: 1.6;
+		}
+
+		&:hover {
+			transform: translateY(-5px);
+			cursor: default;
+		}
+	}
+}
+
+.about-text {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	margin-top: 2rem;
+
+	.aboutme-image {
+		width: 100%;
+		height: auto;
+		object-fit: cover;
+		border-radius: 12px;
+		box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+		margin-bottom: 2rem;
+	}
+}
+
+.collab-wrap {
+	row-gap: 3rem;
+}
+
+.collab-box {
+	margin-bottom: 1rem;
+	font-weight: bold;
+}
+
+.collab-wrap p {
+	margin-top: 0.5rem;
+	margin-bottom: 0;
+	line-height: 1.7;
+}
+
+.projects-section {
+	background-color: $color-dark;
+	color: $color-light-gray;
+	padding: 5rem 0;
+
+	.section-title {
+		color: $color-light-gray;
+	}
+
+	.underline {
+		background-color: $color-main;
+	}
+
+	.project-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 3rem;
+		margin-top: 3rem;
+	}
+
+	.project-item {
+		text-align: center;
+		background-color: $color-dark;
+		border-radius: 12px;
+		transition: transform 0.3s ease;
+		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+		img {
+			width: 100%;
+			border-radius: 12px;
+			margin-bottom: 1rem;
+			transition: transform 0.3s ease;
+		}
+
+		h3,
+		p {
+			color: $color-light-gray;
+			margin: 0.5rem 0;
+		}
+
+		a {
+			color: $color-light-gray;
+			text-decoration: none;
+
+			&:hover {
+				color: $color-main;
+			}
+		}
+
+		&:hover {
+			transform:translatey(-8px) img {
+				transform: scale(1.03);
+			}
+		}
+	}
+}
+
+.contact-section {
+	background-color: $color-light-gray;
+	color: $color-dark;
+	padding: 5rem 0;
+
+	.section-title {
+		text-align: center;
+		text-transform: uppercase;
+		color: $color-dark;
+	}
+
+	.underline {
+		background-color: $color-main;
+		margin-bottom: 2rem;
+	}
+
+	.subtitle {
+		text-align: center;
+		margin-bottom: 2rem;
+		font-size: 1.1rem;
+		color: $color-dark;
+	}
+
+	.contact-form {
+		max-width: 600px;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+		gap: 1.5rem;
+
+		.form-group {
+			display: flex;
+			flex-direction: column;
+
+			label {
+				margin-bottom: 0.5rem;
+				font-weight: bold;
+				color: $color-dark;
+			}
+
+			input,
+			textarea {
+				padding: 0.75rem;
+				border: 1px solid #ccc;
+				border-radius: 8px;
+				font-size: 1rem;
+			}
+
+			input:focus,
+			textarea:focus {
+				border-color: $color-main;
+				outline: none;
+			}
+		}
+
+		.btn-submit {
+			background-color: $color-main;
+			color: #fff;
+			padding: 0.75rem 1.5rem;
+			border: none;
+			border-radius: 8px;
+			cursor: pointer;
+			font-weight: bold;
+			text-transform: uppercase;
+			transition: background-color 0.3s;
+
+			&:hover {
+				background-color: darken($color-main, 10%);
+			}
+		}
+	}
+}
+
+.site-footer {
+	background-color: $color-dark;
+	color: $color-light-gray;
+	padding: 4rem 1rem 2rem;
+
+	.footer-content {
+		display: flex;
+		flex-direction: column;
+		gap: 3rem;
+		margin-bottom: 2rem;
+
+		.footer-branding,
+		.footer-links,
+		.footer-contact {
+			text-align: center;
+		}
+
+		.footer-logo {
+			width: 150px;
+			margin-bottom: 1rem;
+		}
+
+		h4 {
+			font-size: 1.2rem;
+			margin-bottom: 1rem;
+			color: $color-main;
+			text-transform: uppercase;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+
+			li {
+				margin: 0.5rem 0;
+
+				a {
+					color: $color-light-gray;
+					text-decoration: none;
+
+					&:hover {
+						color: $color-main;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-bottom {
+		border-top: 1px solid rgba(255, 255, 255, 0.1);
+		padding-top: 2rem;
+		text-align: center;
+		font-size: 0.9rem;
+
+		p {
+			margin: 0.5rem 0;
+		}
+
+		.dev-credit {
+			font-style: italic;
+			color: $color-medium-gray;
+		}
+	}
+}
+@media (min-width: 768px) {
+	.hero-img {
+		padding: 3rem 1rem;
+		padding-top: 5.5rem;
+
+		h1 {
+			font-size: 1.5rem;
+		}
+
+		.header-image {
+			margin-bottom: 1.5rem;
+		}
+	}
+
+	.footer-content {
+		flex-direction: row;
+		justify-content: space-between;
+		text-align: left;
+
+		.footer-branding,
+		.footer-links,
+		.footer-contact {
+			flex: 1;
+		}
+	}
+
+	.footer-logo {
+		margin-left: 0;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		scroll-padding-top: 72px;
+	}
+
+	.about-text {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: stretch;
+		gap: 3rem;
+		text-align: left;
+
+		.aboutme-image {
+			width: auto;
+			max-width: none;
+			height: auto;
+			max-height: 400px;
+			object-fit: contain;
+			margin: 0 auto;
+			align-self: center;
+		}
+
+		.col-lg-6 {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.col-lg-6:first-child {
+			flex: 1;
+			display: flex;
+			align-items: center;
+		}
+
+		.col-lg-6:last-child {
+			flex: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+	}
+}
+
+.collab-wrap {
+	row-gap: 4rem;
+}
+
+@media (min-width: 1200px) {
+	.hero-img {
+		padding: 6rem 1rem;
+
+		h1 {
+			font-size: 2.5rem;
+			margin-bottom: 3rem;
+		}
+
+		.header-image {
+			margin-bottom: 2.5rem;
+		}
+	}
+}

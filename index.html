@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+		<meta
+			name="description"
+			content="MacWebStudio – Tworzę nowoczesne, szybkie i responsywne strony internetowe dla firm i osób prywatnych. Profesjonalnie i bez zbędnych komplikacji." />
+		<meta
+			name="keywords"
+			content="strony internetowe, web developer, freelancer, MacWebStudio, tworzenie stron, web design, responsywne strony" />
+		<meta name="author" content="Maciej Frankowski" />
+		<title>MacWebStudio</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous" />
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+		<link
+			href="https://fonts.googleapis.com/css?family=Dancing+Script|Montserrat:200,400,700&display=swap&subset=latin-ext"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="./src/css/style.css" />
+		<script
+			src="https://kit.fontawesome.com/4088f0e115.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg position-fixed top-0 w-100 py-3">
+			<div class="container">
+				<a href="#" class="navbar-brand">
+					<img src="./dist/img/MWSlogoBlue.png" alt="Logo firmy MacWebStudio" />
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarNavAltMarkup"
+					aria-controls="navbarNavAltMarkup"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<i class="fa-solid fa-bars"></i>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav ms-auto">
+						<a class="nav-link" href="#aboutme" aria-current="page">O mnie</a>
+						<a href="#offer" class="nav-link">Oferta</a>
+						<a href="#collab" class="nav-link">Współpraca</a>
+						<a href="#projects" class="nav-link">Projekty</a>
+						<a href="#contact" class="nav-link">Kontakt</a>
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<header class="hero-img" id="home">
+			<div class="hero-text text-center p-3">
+				<h1 class="section-title" data-aos="zoom-in">
+					Twój biznes.<br />
+					Mój kod.<br />
+					<span class="blue-text">Wspólny sukces</span>!
+				</h1>
+
+				<div class="header-image">
+					<img
+						src="./dist/img/header-laptop.png"
+						alt="Logo firmy MacWebStudio przedstawiające litery M, W oraz S oraz po prawej stronie znajduje się nazwa firmy" />
+				</div>
+				<p>
+					Projektuję nowoczesne, responsywne strony internetowe, które pomagają
+					firmom rosnąć w sieci. Nie tworzę <strong>„kolejnych stron”</strong>,
+					tylko przemyślane rozwiązania, które realnie wspierają Twój biznes.
+					Strona ma nie tylko wyglądać – <strong>ma działać</strong>.
+				</p>
+				<a href="#aboutme" class="btn btn-outline-light mt-2 text-uppercase"
+					>Poznaj mnie<a />
+					<div class="hero-shadow"></div>
+					<a href="#aboutme""><i class="fa-solid fa-chevron-down bounce-top"></i
+				></a>
+			</div>
+		</header>
+		<main>
+			<section id="aboutme" class="aboutme bg-light py-5 about-img">
+				<div class="container">
+					<h2 class="section-title" data-aos="zoom-in">O mnie</h2>
+					<div class="underline"></div>
+					<div class="row align-items-center about-text">
+						<div class="col-lg-6 text-center mb-4 mb-lg-0">
+							<img
+								src="./dist/img/MFblueWallpaper.png"
+								alt="Zdjęcie Macieja Frankowskiego"
+								class="img-fluid aboutme-image" />
+						</div>
+						<div class="col-lg-6">
+							<p>
+								Cześć! Nazywam się <strong>Maciej Frankowski</strong> i jako
+								freelancer stojący za <strong>MacWebStudio</strong>, tworzę
+								nowoczesne strony internetowe, które nie tylko wyglądają dobrze
+								– one po prostu działają.
+							</p>
+							<p>
+								Specjalizuję się w tworzeniu
+								<strong>responsywnych, szybkich i estetycznych</strong> stron
+								dla firm oraz osób prywatnych. W mojej pracy łączę design z
+								funkcjonalnością, żeby każda realizacja była maksymalnie
+								dopasowana do potrzeb klienta.
+							</p>
+							<p>
+								Zależy mi na tym, żeby klient miał nie tylko stronę, ale pełne
+								wsparcie: od pomysłu, przez projekt, aż po wdrożenie. U mnie nie
+								ma miejsca na przypadek ani półśrodki –
+								<strong>każdy piksel ma sens</strong>.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="offer" class="offer py-5">
+				<div class="container">
+					<h2 class="section-title" data-aos="zoom-in">
+						Co mogę dla ciebie zrobić?
+					</h2>
+					<div class="underline"></div>
+
+					<div class="row">
+						<div class="col-sm-6 col-md-4 text-center offerts-hover">
+							<p><i class="fa-solid fa-laptop"></i></p>
+							<p class="offerts-card-title mb-1">
+								<strong>STRONY INTERNETOWE</strong>
+							</p>
+							<p class="offerts-card-text">
+								Nowoczesne, responsywne i szybkie witryny dla firm oraz osób
+								prywatnych. Proste lub rozbudowane – zawsze z dopracowanym UX i
+								czystym kodem.
+							</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center offerts-hover">
+							<p><i class="fa-solid fa-recycle"></i></p>
+							<p class="offerts-card-title mb-1">
+								<strong>REDESIGN I MODERNIZACJA</strong>
+							</p>
+							<p class="offerts-card-text">
+								Masz starą stronę? Zrobię z niej coś, co wreszcie pasuje do
+								Twojej firmy i dzisiejszych standardów.
+							</p>
+						</div>
+						<div class="col-sm-6 col-md-4 text-center offerts-hover">
+							<p><i class="fa-solid fa-headset"></i></p>
+							<p class="offerts-card-title mb-1">
+								<strong>WSPARCIE I OPIEKA TECHNICZNA</strong>
+							</p>
+							<p class="offerts-card-text">
+								Dbanie o aktualność, bezpieczeństwo i wydajność strony. Zajmuję
+								się wszystkim, żebyś Ty mógł skupić się na swoim biznesie.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="collab" class="collab bg-light py-5">
+				<div class="container">
+					<h2 class="section-title" data-aos="zoom-in">
+						Jak wygląda współpraca?
+					</h2>
+					<div class="underline"></div>
+					<div class="collab-wrap row text-center justify-content-center">
+						<div class="col-md-6 col-xl-4">
+							<div class="collab-box">
+								<span class="blue-text">1.</span
+								><strong> Kontakt i ustalenie terminu</strong>
+							</div>
+							<hr />
+							<p>
+								Pierwszy krok to rozmowa – mailowa, telefoniczna lub przez
+								formularz. Omawiamy Twoje potrzeby i rezerwujemy termin na start
+								projektu.
+							</p>
+						</div>
+						<div class="col-md-6 col-xl-4">
+							<div class="collab-box">
+								<span class="blue-text">2.</span>
+								<strong>Darmowy mockup strony</strong>
+							</div>
+							<hr />
+							<p>
+								Przygotowuję bezpłatny mockup Twojej przyszłej strony, żebyś
+								mógł zobaczyć moją wizję zanim podejmiesz decyzję o współpracy.
+							</p>
+						</div>
+						<div class="col-md-6 col-xl-4">
+							<div class="collab-box">
+								<span class="blue-text">3.</span>
+								<strong>Finalizacja ustaleń i podpisanie umowy</strong>
+							</div>
+							<hr />
+							<p>
+								Gdy zaakceptujesz mockup, dogrywamy szczegóły, podpisujemy umowę
+								i działamy!
+							</p>
+						</div>
+						<div class="col-md-6 col-xl-4">
+							<div class="collab-box">
+								<span class="blue-text">4.</span>
+								<strong>Projekt graficzny i kodowanie</strong>
+							</div>
+							<hr />
+							<p>
+								Tworzę pełny projekt graficzny, który następnie zamieniam w
+								responsywną i nowoczesną stronę. Kod piszę ręcznie, bez gotowych
+								szablonów.
+							</p>
+						</div>
+						<div class="col-md-6 col-xl-4">
+							<div class="collab-box">
+								<span class="blue-text">5.</span>
+								<strong>Publikacja strony</strong>
+							</div>
+							<hr />
+							<p>
+								Po akceptacji projektu wrzucam stronę na Twój serwer lub pomagam
+								w wyborze hostingu. Strona ląduje online i działa.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="projects" class="projects-section">
+				<div class="container">
+					<h2 class="section-title" data-aos="zoom-in">Wykonane projekty</h2>
+					<div class="underline"></div>
+
+					<div class="project-grid">
+						<div class="project-item">
+							<a
+								href="https://maciejfrankowski1007.github.io/ProGamers/"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img src="./dist/img/proGamers.png" alt="Strona ProGamers.pl" />
+								<h3>ProGamers</h3>
+							</a>
+							<p>Producent gier wideo</p>
+						</div>
+						<div class="project-item">
+							<a
+								href="https://maciejfrankowski1007.github.io/TropicalParadise/"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img
+									src="./dist/img/tropicalParadise.png"
+									alt="Strona TropicalParadise.pl" />
+								<h3>Tropical Paradise</h3>
+							</a>
+							<p>Strona biura podróży</p>
+						</div>
+						<div class="project-item">
+							<a
+								href="https://maciejfrankowski1007.github.io/Wasabi-Restaurant/"
+								target="_blank"
+								rel="noopener noreferrer">
+								<img
+									src="./dist/img/wasabiRestaurant.png"
+									alt="Strona drseidel.pl" />
+								<h3>Wasabi Restaurant</h3>
+							</a>
+							<p>Strona restauracji</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="contact" class="contact-section bg-light">
+				<div class="container">
+					<h2 class="section-title" data-aos="zoom-in">
+						Porozmawiajmy o twojej stronie
+					</h2>
+					<div class="underline"></div>
+					<p class="subtitle">
+						Masz pytanie, pomysł lub chcesz zamówić stronę? Napisz śmiało!
+					</p>
+
+					<form
+						class="contact-form"
+						action="mailto:kontakt@macwebstudio.pl"
+						method="POST"
+						enctype="text/plain">
+						<div class="form-group">
+							<label for="name">Imię i nazwisko</label>
+							<input
+								type="text"
+								id="name"
+								name="name"
+								required
+								placeholder="Wpisz swoje imię i nazwisko" />
+						</div>
+
+						<div class="form-group">
+							<label for="email">Adres e-mail</label>
+							<input
+								type="email"
+								id="email"
+								name="email"
+								required
+								placeholder="Wpisz adres e-mail" />
+						</div>
+
+						<div class="form-group">
+							<label for="message">Wiadomość</label>
+							<textarea
+								name="message"
+								id="message"
+								rows="6"
+								required
+								placeholder="Tutaj napisz, w czym mogę pomóc"></textarea>
+						</div>
+
+						<button type="submit" class="btn-submit">Wyślij wiadomość</button>
+					</form>
+				</div>
+			</section>
+
+			<footer class="site-footer">
+				<div class="container">
+					<div class="footer-content">
+						<div class="footer-branding">
+							<img
+								src="./dist/img/MWSlogoBlue.png"
+								alt="Logo MacWebStudio"
+								class="footer-logo" />
+							<p>
+								Tworzę nowoczesne, szybkie i responsywne strony internetowe dla
+								firm i osób prywatnych.
+							</p>
+						</div>
+
+						<div class="footer-links">
+							<h4>Linki</h4>
+							<ul>
+								<li><a class="nav-link" href="#aboutme">O mnie</a></li>
+								<li><a class="nav-link" href="#offer">Oferta</a></li>
+								<li><a class="nav-link" href="#collab">Współpraca</a></li>
+								<li><a class="nav-link" href="#projects">Projekty</a></li>
+								<li><a class="nav-link" href="#contact">Kontakt</a></li>
+							</ul>
+						</div>
+
+						<div class="footer-contact">
+							<h4>Kontakt</h4>
+							<ul>
+								<li>
+									<a href="mailto:kontakt@macwebstudio.pl"
+										>kontakt@macwebstudio.pl</a
+									>
+								</li>
+								<li><a href="tel:+48603442341">+48 603 442 341</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="footer-bottom">
+						<p>© 2025 MacWebStudio. Wszystkie prawa zastrzeżone.</p>
+						<p class="dev-credit">
+							Zaprojektowane i zakodowane przez MacWebStudio
+						</p>
+					</div>
+				</div>
+			</footer>
+		</main>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+			crossorigin="anonymous"></script>
+
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script
+			type="text/javascript"
+			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+		<script
+			type="text/javascript"
+			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+		<script>
+			AOS.init({
+				startEvent: "DOMContentLoaded",
+				offset: 50,
+				once: true,
+			});
+		</script>
+
+		<script src="/javascript/slick.js"></script>
+		<script src="./dist/js/main.min.js"></script>
+	</body>
+</html>
